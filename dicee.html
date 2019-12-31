@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>images/dicee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+  </head>
+  <body>
+    <script type="text/javascript">
+     function ab(){
+       var n=Math.floor(Math.random() * (7 - 1))+1;
+       var m=Math.floor(Math.random() * (7 - 1))+1;
+
+console.log(n);
+
+
+       if(n>m){
+             document.getElementsByTagName("h1")[0].innerText="🚩player1 wins";
+
+       }
+       else{
+             document.getElementsByTagName("h1")[0].innerText="player2 wins🚩";
+
+       }
+       if(n==1){
+   document.getElementById("img1").src = "images/dice1.png";
+ }
+ else if(n==2){
+   document.getElementById("img1").src="images/dice2.png";
+ }
+else if(n==3){
+   document.getElementById("img1").src="images/dice3.png";
+ }
+ else if(n==4){
+   document.getElementById("img1").src="images/dice4.png";
+ }
+ else if(n==5){
+   document.getElementById("img1").src="images/dice5.png";
+ }
+ else{
+   document.getElementById("img1").src="images/dice6.png";
+ }
+
+ if(m==1){
+   document.getElementById("img2").src = "images/dice1.png";
+ }
+ else if(m==2){
+   document.getElementById("img2").src="images/dice2.png";
+ }
+ else if(m==3){
+   document.getElementById("img2").src="images/dice3.png";
+ }
+ else if(m==4){
+   document.getElementById("img2").src="images/dice4.png";
+ }
+ else if(m==5){
+   document.getElementById("img2").src="images/dice5.png";
+ }
+ else{
+   document.getElementById("img2").src="images/dice6.png";
+ }
+}
+
+    </script>
+
+    <div class="container">
+
+
+        <h1>Lets start</h1>
+
+
+
+
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img id="img1" src="images/dice1.png">
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img id="img2" src="images/dice1.png">
+      </div>
+
+    </div>
+    <div class="roll">
+      <button class="aa"type="button" onclick="ab()"name="Roll">Roll</button>
+
+    </div>
+
+
+  </body>
+
+  <footer>
+     🎲 saimagesh 🎲 
+  </footer>
+</html>
